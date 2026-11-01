@@ -1,0 +1,7 @@
+torch
+torchvision
+pennylane
+numpy
+scikit-image
+Pillow
+soundfile
