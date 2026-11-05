@@ -2,7 +2,7 @@
 
 **Daniel A. Moroz-Broitman, Eliya Nachmani** · Ben Gurion University · NeurIPS 2026
 
-[Paper](PAPER_LINK) · [arXiv](ARXIV_LINK) · [Project page](PROJECT_LINK)
+[Paper](https://neurips.cc/virtual/2026/loc/paris/poster/152323) · [arXiv](https://arxiv.org/abs/2611.04574) · [Project page](https://kiiwii10.github.io/SQMM_page/)
 
 SQMM is a quantum implicit neural representation (QINR) whose data reuploading bands share a small coherent **quantum memory register**. Each band reads the memory, computes on its own coordinate upload, and writes part of its state back, so later bands build on what earlier bands computed.
 
@@ -50,7 +50,7 @@ python main.py --dataset cello --runs 5
 - `--dataset`: `cello`, `camera`, `coffee`, `astronaut`
 - `--epochs`, `--growth`, `--align-weight`, `--divergence`, `--config my_config.json` override the defaults
 
-Training uses the MSE with $\mathcal L_{\mathrm{align}}$. Each run writes `out/<dataset>/runs.csv` and `results.json` with the best epoch MSE and PSNR. On a Slurm cluster, `sbatch --array=0-3 run.sbatch` runs all 4 datasets.
+Training uses the MSE with $\mathcal L_{\mathrm{align}}$. Each run writes `out/<dataset>/runs.csv` and `results.json` with the best epoch MSE and PSNR.
 
 | File | Contents |
 |---|---|
@@ -64,13 +64,12 @@ One band of the trained Cello model, with reads before the uploads and writes at
 ![SQMM band ansatz](assets/band_ansatz.png)
 
 ## Citation
-TBD
-<!-- ```bibtex
-@inproceedings{morozbroitman2026sqmm,
-  title     = {Spectral Quantum Memory for Implicit Neural Representations},
-  author    = {Moroz-Broitman, Daniel A. and Nachmani, Eliya},
-  booktitle = {Advances in Neural Information Processing Systems},
-  year      = {2026},
-  url       = {PAPER_LINK}
+@misc{morozbroitman2026spectralquantummemoryimplicit,
+      title={Spectral Quantum Memory for Implicit Neural Representations}, 
+      author={Daniel A. Moroz-Broitman and Eliya Nachmani},
+      year={2026},
+      eprint={2611.04574},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph},
+      url={https://arxiv.org/abs/2611.04574}, 
 }
-``` -->
