@@ -64,6 +64,7 @@ One band of the trained Cello model, with reads before the uploads and writes at
 ![SQMM band ansatz](assets/band_ansatz.png)
 
 ## Citation
+```bibtex
 @misc{morozbroitman2026spectralquantummemoryimplicit,
       title={Spectral Quantum Memory for Implicit Neural Representations}, 
       author={Daniel A. Moroz-Broitman and Eliya Nachmani},
@@ -73,3 +74,4 @@ One band of the trained Cello model, with reads before the uploads and writes at
       primaryClass={quant-ph},
       url={https://arxiv.org/abs/2611.04574}, 
 }
+```
